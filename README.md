@@ -20,12 +20,19 @@ ___
     ``git@github.com:farmat2909/infra_sp2.git``
 
 2. Необходимо создать в папке /infra файл .env и заполнить переменными окружения.
+
     ``DB_ENGINE=django.db.backends.postgresql # указываем, что работаем c postgresql``
+
     ``DB_NAME=postgres # имя базы данных``
+
     ``POSTGRES_USER=postgres # логин для подключения к базе данных``
+
     ``POSTGRES_PASSWORD=postgres # пароль для подключения к БД (установите свой)``
+
     ``DB_HOST=db # название сервиса (контейнера)``
+
     ``DB_PORT=5432 # порт для подключения к БД``
+    
     ``SECRET_KEY=ваш секретный ключ``
 
 3. Находясь в папке /infra запустите сборку образа Docker.
